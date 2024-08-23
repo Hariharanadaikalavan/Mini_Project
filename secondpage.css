@@ -1,0 +1,81 @@
+.set1{
+    display:flex;
+    justify-content: space-around;
+    background-color:aquamarine;
+}
+.s1:hover{ 
+    transform: scale(1.5);
+    color: crimson;
+    
+}
+.s2:hover{
+    transform: scale(1.5);
+    color: crimson;
+}
+.s3:hover{
+    transform: scale(1.5);
+    color: crimson;
+}
+.s4:hover{
+    transform: scale(1.5);
+    color: crimson;
+}
+.s5:hover{
+    transform: scale(1.5);
+    color: crimson;
+}
+
+/* .img:hover{
+opacity: 50%;
+/* filter:blur(2px) 
+}*/
+.icecreamproduct, .icecreamproduct1, .icecreamproduct2, .icecreamproduct3 {
+    position: relative;
+    height: 100vh;
+    width: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icecreamproduct {
+    background-image: url("./product1.jpg");
+}
+.icecreamproduct1 {
+    background-image: url("./product2.png");
+}
+.icecreamproduct2 {
+    background-image: url("./product3.png");
+}
+.icecreamproduct3 {
+    background-image: url("./product4.png");
+}
+
+.icecream {
+    display: flex;
+    gap: 50px;
+}
+
+.inside_Image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: rgba(236, 222, 222, 0.5); /* Optional background overlay */
+}
+
+.contentinsidethecontainer {
+    color: black;
+    font-size: 40px;
+}
+
+.icecreamproduct:hover .inside_Image,
+.icecreamproduct1:hover .inside_Image,
+.icecreamproduct2:hover .inside_Image,
+.icecreamproduct3:hover .inside_Image {
+    opacity: 1.5;
+}
